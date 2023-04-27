@@ -11,7 +11,7 @@
         <h3>Completeaza formularul de mai jos:</h3>
         <form>
             <div>
-                <label for>Numele complet</label>
+                <label for="nume">Numele complet</label>
                 <input type="text" id="nume" placeholder="tasteaza aici" required>
             </div>
     
@@ -21,21 +21,21 @@
             </div>
 
         <div>
-                <label>
-                    <input type="checkbox" required>
+                <label for="informatiiEmail">
                     Doresc sa primesc informatii pe email.
-    
                 </label>
+                <input type="checkbox" id="informatiiEmail" required>
          </div>
     
          <div>
-                <label>
-                    <input type="checkbox" required>
+                <label for="termeniConditii">
                     Sunt de acord cu <a href="#">Termenii si conditiile.</a>
                 </label>
+             <input type="checkbox" id="termeniConditii" required>
         </div>
     
-            <button>Trimite</button>
+            //daca nu ii precizam ca butonul e type submit, cand vom prelucra datele din form in partea de JS o sa avem probleme pentru ca formul nu va intelege ce-i cu butonul asta si ce vrem sa faca
+            <button type="submit">Trimite</button>
 
     </form>
 </body>
